@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { FunctionComponent } from 'react';
 import './Message.scss';
 import { SessionContext } from "../contexts/session";
 import List from '@mui/material/List';
@@ -6,10 +6,11 @@ import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import CommentIcon from '@mui/icons-material/Comment';
 import IconButton from '@mui/material/IconButton';
-import { getLocalStorage } from "../lib/storage";
+
+import { jsx } from '../../node_modules/@emotion/react/types/index';
 
 
-function Message() {
+const Message : FunctionComponent = () => {
     const { messages } = React.useContext(SessionContext);
 
 
@@ -17,7 +18,8 @@ function Message() {
         <div>
         { messages !== 'undefined' &&
        <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
-      {messages.map((message) => (
+      {messages.map((message: any): JSX.Element => {
+        return(
         <ListItem
           key={message.message}
           disableGutters
@@ -28,8 +30,8 @@ function Message() {
           }
         >
           <ListItemText primary={message.message} />
-        </ListItem>
-      ))}
+        </ListItem>)
+})}
     </List>}
     </div>
     );

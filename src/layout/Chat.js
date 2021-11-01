@@ -14,15 +14,11 @@ function Chat() {
   const [userName] = useContext(UserContext);
   return (
     <Box component="span" sx={{ p: 2, display: "inline-block", mx: "2px" }}>
-      <div className="chat">
-        {!userName && <Username /> }
-      </div>
-      {userName && <Grid container spacing={3}>
-        <Grid item xs>
-
-        </Grid>
-        <Grid item xs={4}>
-
+      <div className="chat">{!userName && <Username />}</div>
+      {userName && (
+        <Grid container spacing={3}>
+          <Grid item xs></Grid>
+          <Grid item xs={4}>
             <Card variant="outlined" sx={{ minWidth: 275 }}>
               <CardContent>
                 <div className="chat-messages">
@@ -31,12 +27,10 @@ function Chat() {
                 </div>
               </CardContent>
             </Card>
-
+          </Grid>
+          <Grid item xs></Grid>
         </Grid>
-        <Grid item xs>
-
-        </Grid>
-      </Grid>}
+      )}
     </Box>
   );
 }
