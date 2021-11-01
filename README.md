@@ -1,3 +1,18 @@
+# THANKS FOR THE CODE CHALLENGE
+
+I had a lot of fun doing the code challenge. Thanks!
+
+I added a few things to the project like prettier and Typescript as well as converted a couple of files to typescript so you can see my skills with that conversion. Also, i configured and setup typescript on the project. 
+
+I added an animated gif file with the page working with the developers tools in the email that I sent to Jessica. If you need anything else or have any questions, please let me konw. 
+
+I also added the Material-UI library to make the page look nice and used the socket.io interface and the other requriements were met.
+
+Thanks again!
+
+Aaron Guevara
+
+
 # Brandlive Code Challenge
 
 ## Description
