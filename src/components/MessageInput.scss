@@ -1,0 +1,24 @@
+$background-color: #0582FF;
+
+.message-input, #message {
+    width: 100%;
+}
+
+.message-input {
+    display: flex;
+}
+
+#message {
+    padding: 10px 8px;
+    border: 1px solid rgb(102, 102, 102);
+    border-radius: 0;
+    outline: none;
+}
+
+.message-send {
+    border-radius: 0;
+    border: none;
+    background-color: $background-color;
+    color: white;
+    padding: 0 15px;
+}

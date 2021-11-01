@@ -1,0 +1,27 @@
+$foreground: #24292e;
+
+
+.message-bubble-list {
+    width: 100%;
+}
+.message-list {
+    height: 100%;
+    color: $foreground;
+    padding: 0 20px;
+    overflow: scroll;
+}
+
+.message-bubble {
+    padding: 3px 2px;
+}
+
+.message-author {
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 2px 0;  
+}
+
+.message-content {
+    font-weight: 300;
+    font-size: 0.9rem;
+}
