@@ -1,0 +1,42 @@
+@import '../layout/Chat.scss';
+@import '../App.scss';
+
+$border-radius: 6px;
+$font-size: 16px;
+
+
+.username-form {
+    width: 320px;
+    background: none;
+    margin-top: 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-flow: column;
+    margin: 25px 0px;
+}
+
+#username {
+    padding: 5px 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgb(102, 102, 102);
+    outline: none;
+    font-size: $font-size;
+}
+
+#enter-chat {
+    border: none;
+    padding: 6px 12px;
+    border-radius: $border-radius;
+    background-color: #9C9C9C;
+    margin-bottom: 25px;
+}
+
+#enter-chat:hover {
+    cursor: pointer;
+    background-color: $foreground;
+    color: $background;
+}

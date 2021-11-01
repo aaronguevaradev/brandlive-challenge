@@ -1,0 +1,27 @@
+//Margin between form elements
+$form-element-margin-column: grid-px(3);
+$form-element-margin-row: grid-px(4);
+$form-element-margin: $form-element-margin-row $form-element-margin-column;
+
+
+@mixin form-grid-display {
+    display: grid;
+    margin: $form-element-margin;
+    grid-template-columns: grid-px(35) grid-px(35) ;
+    column-gap: $form-element-margin-column;
+    row-gap: $form-element-margin-row;
+    justify-items: stretch;
+}
+.chat, .chat-messages {
+  @include form-grid-display();
+}
+.chat {
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-messages {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
